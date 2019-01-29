@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/title_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="通讯录："
+                android:textColor="@color/bacolor"
+                android:textSize="18dp" />
+
+                <RelativeLayout
+                    android:background="@drawable/linear_shape"
+                    android:layout_width="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_height="30dp">
+
+                    <ImageView
+                        android:id="@+id/imgsearch"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/search2"/>
+
+                    <EditText
+                        android:id="@+id/phone_editText_search"
+                        android:layout_toLeftOf="@id/imgsearch"
+                        android:layout_width="match_parent"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        android:hint="通过手机号搜索经纪人"
+                         />
+
+                </RelativeLayout>
+
+            <EditText
+                android:id="@+id/text_search"
+                android:layout_width="wrap_content"
+                android:background="@null"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/bacolor"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:text="搜索"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/search_tishi_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="注:搜索未注册百发百运车队长时,对方不能直接加入车队长管理，你可以邀请对方注册，注册成功后对方会直接加入我的收藏"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/add_my_favorite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <include layout="@layout/item_driver_info"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/addiver_btn_jrsc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/button_shape1"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:text="加入我的收藏"
+                android:textColor="@color/bacolor" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/search_btn_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/button_shape1"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:text="去邀请"
+        android:textColor="@color/bacolor" />
+</LinearLayout>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="102dp"
+    android:background="@color/qianhui"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/order_layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="0.5dp"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/order_layout_right"
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/order_btn_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/callphone"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="联系车队长"
+                android:textColor="@color/bacolor"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/order_view_line"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/order_layout_right"
+            android:background="@color/qianhui" />
+
+        <LinearLayout
+            android:id="@+id/allorder_layout_centercontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_toLeftOf="@id/order_view_line"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center|left"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center|left"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="13dp"
+                            android:layout_height="13dp"
+                            android:src="@drawable/loading" />
+
+                        <TextView
+                            android:id="@+id/allorder_txt_start"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:text="长沙岳麓区"
+                            android:textColor="#050505"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/order_distance"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:textSize="10dp"
+                            android:text="1234公里" />
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="10dp"
+                            android:alpha="0.7"
+                            android:src="@drawable/square" />
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/goend" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="13dp"
+                            android:layout_height="13dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/unload" />
+
+                        <TextView
+                            android:id="@+id/allorder_txt_end"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:text="深圳南山区"
+                            android:textColor="#050505"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="28dp"
+                android:gravity="center|left"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:src="@drawable/car1" />
+
+                <TextView
+                    android:id="@+id/allorder_txt_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    style="@style/infotextstyle"
+                    android:text="高栏车/9.6米/18吨" />
+
+                <TextView
+                    android:id="@+id/allorder_txt_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    style="@style/infotextstyle"
+                    android:text="水果" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/order_layout_userinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="28dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/allorder_img_head"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/head" />
+
+                    <ImageView
+                        android:id="@+id/order_txt_userlevel"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_above="@id/orderdetail_img_head"
+                        android:layout_alignParentRight="true"
+                        android:visibility="gone"
+                        android:src="@drawable/vip"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/order_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="李xx"
+                        android:textColor="#050505" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="等级："
+                            style="@style/infotextstyle"/>
+
+                        <com.hedgehog.ratingbar.RatingBar
+                            android:id="@+id/ratingbar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical"
+                            hedgehog:clickable="false"
+                            hedgehog:starCount="5"
+                            hedgehog:starEmpty="@mipmap/ic_star_empty"
+                            hedgehog:starFill="@mipmap/ic_star_fill"
+                            hedgehog:starHalf="@mipmap/star_half"
+                            hedgehog:starImageHeight="20dp"
+                            hedgehog:starImagePadding="1dp"
+                            hedgehog:starImageWidth="15dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/order_txt_before"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            style="@style/infotextstyle"
+                            android:text="一分钟以前" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center"
+                            android:text="约1234公里" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"/>
+</LinearLayout>

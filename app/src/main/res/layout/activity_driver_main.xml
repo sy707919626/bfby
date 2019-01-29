@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/carcaptain_layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/bottomMenu"
+        android:layout_weight="1"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/bottomMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/qianhui"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/vg_order_tab_click_stub"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+
+            <ImageView
+                android:id="@+id/iv_order_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/listnormal2x" />
+
+
+            <TextView
+                android:id="@+id/tv_order_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="配货大厅"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_size_small_2" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vg_waybill_tab_click_stub"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+
+            <ImageView
+                android:id="@+id/iv_waybill_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/alaremnormal2x" />
+
+
+            <TextView
+                android:id="@+id/tv_waybill_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="运单"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_size_small_2" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/vg_captain_tab_click_stub"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+
+            <ImageView
+                android:id="@+id/iv_captain_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/medianormal2x" />
+
+
+            <TextView
+                android:id="@+id/tv_captain_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="车队长"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_size_small_2" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/vg_my_tab_click_stub"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+
+            <ImageView
+                android:id="@+id/iv_my_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/nav_icon_chat_nor2x" />
+
+
+            <TextView
+                android:id="@+id/tv_my_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="我的"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_size_small_2" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

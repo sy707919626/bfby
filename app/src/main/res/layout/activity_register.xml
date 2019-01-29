@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_shape"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="+86"
+                android:textColor="@color/jetblack"
+                android:textSize="15dp" />
+
+            <com.lulian.driver.view.wheel.ClearEditText
+                android:id="@+id/reg_edit_name"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:textSize="15dp"
+                android:textColor="@color/somber"
+                android:hint="请输入手机号码"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <com.lulian.driver.view.wheel.ClearEditText
+                android:id="@+id/reg_edit_code"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:textSize="15dp"
+                android:textColor="@color/somber"
+                android:background="@drawable/edit_shape"
+                android:hint="输入验证码"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/reg_btn_getcode"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape"
+                android:gravity="center"
+                android:text="获取验证码"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:id="@+id/register_ll_check">
+
+            <CheckBox
+                android:id="@+id/reg_ckbox_procotol"
+                android:layout_width="wrap_content"
+                android:theme="@style/My_CheckBox"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="阅读并同意" />
+            <TextView
+                android:id="@+id/reg_text_protocol"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/bacolor"
+                android:gravity="center"
+                android:text="百发百运风险协议" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/reg_btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:background="@drawable/button_shape"
+            android:text="下一步"
+            android:textColor="@color/white" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/register_ll_help">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/reg_text_ser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="联系客服" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="|" />
+
+                <TextView
+                    android:id="@+id/reg_text_help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="使用帮助" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/register_ll_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:text="收不到短信怎么办?"/>
+            <TextView
+                android:id="@+id/register_txt_clickhere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点击这里"
+                android:textColor="@color/phonecolor"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

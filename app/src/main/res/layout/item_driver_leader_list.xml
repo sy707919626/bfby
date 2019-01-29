@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/common_list_item_vertical_padding"
+    android:paddingLeft="@dimen/common_list_item_horizontal_padding"
+    android:paddingRight="@dimen/common_list_item_horizontal_padding"
+    android:paddingTop="@dimen/common_list_item_vertical_padding">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+        <!--头像-->
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/head" />
+
+        <!--合作次数-->
+        <TextView
+            android:id="@+id/tv_cooperation_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="合作X次"
+            android:textColor="@color/bacolor"
+            android:textSize="@dimen/text_size_small_2" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal">
+
+            <!--车队长名字-->
+            <TextView
+                android:id="@+id/tv_captain_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="X队长"
+                android:textColor="@color/somber1"
+                android:textSize="@dimen/text_size_big_1"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="3dp"
+                android:text="等级:"
+                android:textColor="@color/somber1"
+                android:textSize="@dimen/text_size_small_2" />
+
+            <!--等级-->
+            <com.hedgehog.ratingbar.RatingBar
+                android:id="@+id/ratingbar_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                hedgehog:clickable="false"
+                hedgehog:starCount="5"
+                hedgehog:starEmpty="@mipmap/ic_star_empty"
+                hedgehog:starFill="@mipmap/ic_star_fill"
+                hedgehog:starHalf="@mipmap/star_half"
+                hedgehog:starImageHeight="20dp"
+                hedgehog:starImagePadding="1dp"
+                hedgehog:starImageWidth="15dp" />
+
+
+            <TextView
+                android:id="@+id/tv_mine_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:background="@color/bacolor"
+                android:padding="3dp"
+                android:text="我的"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_small_2" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="3dp"
+                android:text="手机:"
+                android:textColor="@color/somber1"
+                android:textSize="@dimen/text_size_small_3" />
+
+            <!--手机号-->
+            <TextView
+                android:id="@+id/tv_captain_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="3dp"
+                android:textColor="@color/somber1"
+                android:textSize="@dimen/text_size_small_3" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="3dp"
+                android:text="负责路线:"
+                android:textColor="@color/somber1"
+                android:textSize="@dimen/text_size_small_3" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY"
+                android:src="@drawable/start" />
+
+            <!--车队负责路线起点-->
+            <TextView
+                android:id="@+id/tv_captain_line_start"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="XXXXX"
+                android:textColor="@color/somber1"
+                android:textSize="@dimen/text_size_small_3" />
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/goend" />
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY"
+                android:src="@drawable/end" />
+
+            <!--车队负责路线终点-->
+            <TextView
+                android:id="@+id/tv_captain_line_end"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="XXXXX"
+                android:textColor="@color/somber1"
+                android:textSize="@dimen/text_size_small_3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY"
+                android:src="@drawable/renzhen" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:text="实名认证"
+                android:textColor="@color/green"
+                android:textSize="@dimen/text_size_small_2" />
+
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY"
+                android:src="@drawable/renzhen" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="公司认证"
+                android:textColor="@color/green"
+                android:textSize="@dimen/text_size_small_2" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/vg_favorite_click_stub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+                android:src="@drawable/starton" />
+
+            <TextView
+                android:id="@+id/tv_favorite_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="XXX"
+                android:textColor="@color/bacolor"
+                android:textSize="@dimen/text_size_small_1" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/vg_contact_click_stub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/callphone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="联系"
+                android:textColor="@color/bacolor"
+                android:textSize="@dimen/text_size_small_1" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

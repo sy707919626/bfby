@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.lulian.driver.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bacolor">
+
+        <LinearLayout
+            android:id="@+id/order_layout_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/action_img_left"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/service" />
+
+            <TextView
+                android:id="@+id/action_txt_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="服务"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/action_rg_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/action_rb_allorder"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:background="@drawable/shap_all_btn"
+                android:button="@null"
+                android:gravity="center" />
+
+            <RadioButton
+                android:id="@+id/action_rb_portoinorder"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:background="@drawable/shap_myrw_btn"
+                android:button="@null" />
+
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/action_layout_ba"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/action_img_right"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/msg" />
+
+            <TextView
+                android:id="@+id/action_txt_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="消息"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

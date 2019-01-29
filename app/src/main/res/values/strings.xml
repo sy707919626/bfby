@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">百发百运-司机版</string>
+    <string name="app_version">版本V1.0.0</string>
+    <string name="mydata">我的资料</string>
+    <string name="mybuy">购买保险</string>
+    <string name="sum">里程计算</string>
+    <string name="find">违章查询</string>
+    <string name="carshop">物流商城</string>
+    <string name="share">分享给好友</string>
+    <string name="help">帮助与反馈</string>
+    <string name="setting">设置</string>
+    <string name="aboutme">关于我们</string>
+
+    <string name="hello">Hello World, JPush!</string>
+    <string name="tag_hint">Tag为大小写字母，数字，下划线,中文， 多个用以逗号分隔</string>
+    <string name="alias_hint">Alias为大小写字母，数字，下划线</string>
+    <string name="mobilenumber_hint">手机号只能以“+”或数字开头第二位开始只能包含“-”和数字</string>
+    <string name="style_hint">style为数字</string>
+    <string name="error_style_empty">style不能为空</string>
+    <string name="error_alias_empty">alias不能为空</string>
+    <string name="error_tag_empty">tag不能为空</string>
+    <string name="error_tag_gs_empty">格式不对</string>
+    <string name="mobilenumber_empty_guide">手机号为空将清除之前设置的手机号</string>
+    <string name="error_network">网络连接异常,初始化失败 请检查网络！</string>
+    <string name="logining">程序在后台执行, 请查看日志！</string>
+    <string name="setting_su">设置成功</string>
+    <string name="notifyTitle">提示</string>
+    <string name="notifyMsg">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。</string>
+    <string name="cancel">取消</string>
+
+    <string name="cancle">取消</string>
+    <string name="title">请选择时间</string>
+    <string name="commit">确定</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+
+    <string name="select_date">选择日期</string>
+    <string name="current_date">当前日期</string>
+    <string name="select_time">选择时间</string>
+    <string name="current_time">当前时间</string>
+
+    <!--跳过完善资料的提示文字-->
+    <string name="skip_complete_info_tip">注册已完成,您可以在我的资料里继续填写</string>
+
+</resources>

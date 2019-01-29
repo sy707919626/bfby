@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="waybill_state">
+        <item >全部</item>
+        <item >待取货</item>
+        <item >装货中</item>
+    </string-array>
+
+    <string-array name="transport_state">
+        <item >运输中</item>
+        <item >反馈异常单</item>
+        <item >到达目的地</item>
+        <item >确认收货</item>
+    </string-array>
+
+    <string-array name="waybill_completion">
+        <item >已完成</item>
+        <item >提醒付款</item>
+        <item >待评价</item>
+    </string-array>
+
+    <string-array name="grade">
+        <item >等级</item>
+        <item >一星</item>
+        <item >二星</item>
+        <item >三星</item>
+        <item >四星</item>
+        <item >五星</item>
+    </string-array>
+
+    <string-array name="fistance">
+        <item >与我距离</item>
+        <item >由近到远</item>
+        <item >由远到近</item>
+
+    </string-array>
+
+    <string-array name="bank">
+        <item >农业银行</item>
+        <item >工商银行</item>
+        <item >中国银行</item>
+        <item >建设银行</item>
+        <item >招商银行</item>
+        <item >交通银行</item>
+        <item >民生银行</item>
+    </string-array>
+
+</resources>

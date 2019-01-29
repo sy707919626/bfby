@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:padding="2dp"
+    >
+
+
+    <TextView
+        android:id="@+id/tv_tag_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:paddingTop="@dimen/tag_vertical_padding"
+        android:paddingBottom="@dimen/tag_vertical_padding"
+        android:paddingLeft="@dimen/tag_horizontal_padding"
+        android:paddingRight="@dimen/tag_horizontal_padding"
+        android:layout_gravity="center"
+        android:text="xxx"
+        android:maxLines="1"
+        android:gravity="center"
+        android:ellipsize="end"
+        android:background="@drawable/tag_normal"
+        android:textColor="@color/somber1"
+        />
+
+
+</FrameLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/action_brokerbar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:id="@+id/broker_bottomMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/qianhui"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/broker_rb_fahuo"
+                style="@style/BottomMenu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/shap_list_btn"
+                android:text="发货" />
+
+            <RadioButton
+            android:id="@+id/broker_rb_dingdan"
+            style="@style/BottomMenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:drawableTop="@drawable/shap_alarm_btn"
+            android:text="订单" />
+
+            <RadioButton
+                android:id="@+id/broker_rb_yundan"
+                style="@style/BottomMenu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/shap_media_btn"
+                android:text="运单" />
+
+            <RadioButton
+                android:id="@+id/broker_rb_me"
+                style="@style/BottomMenu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/shap_more_btn"
+                android:text="我的" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/broker_layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/broker_bottomMenu"
+            android:orientation="vertical">
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

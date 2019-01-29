@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar"></include>
+
+    <LinearLayout
+        android:id="@+id/title_bar_tishi"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/mebanner"
+        android:gravity="center|left"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/red"
+            android:text="验证身份"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text=">"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:text="输入新号码"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_shape"
+            android:orientation="horizontal">
+
+            <com.lulian.driver.view.wheel.ClearEditText
+                android:id="@+id/reg_edit_idcard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:textSize="15dp"
+                android:textColor="@color/somber"
+                android:hint="请输入身份证号码"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <com.lulian.driver.view.wheel.ClearEditText
+                android:id="@+id/reg_edit_imagecode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:textSize="15dp"
+                android:textColor="@color/somber"
+                android:background="@drawable/edit_shape"
+                android:hint="请输入图形验证码"
+                android:inputType="number" />
+
+            <ImageView
+                android:id="@+id/reg_btn_gettxcode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/reg_btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_shape"
+            android:text="下一步"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

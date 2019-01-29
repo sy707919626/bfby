@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/tag_selected"
+    android:paddingTop="@dimen/tag_vertical_padding"
+    android:paddingBottom="@dimen/tag_vertical_padding"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    >
+
+    <TextView
+        android:id="@+id/tv_region_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/bacolor"
+        android:textSize="@dimen/text_size_small_2"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="2dp"
+        />
+
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/delete"
+        android:layout_gravity="center_vertical"
+        />
+
+
+
+
+</LinearLayout>
+
+
+

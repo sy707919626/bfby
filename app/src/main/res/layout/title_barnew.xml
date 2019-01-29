@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/bacolor"
+    tools:context="com.lulian.driver.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/order_layout_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/action_img_left"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/service" />
+
+        <TextView
+            android:id="@+id/action_txt_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="XXXX"
+        android:textColor="#ffffff"
+        android:textSize="19dp" />
+
+    <LinearLayout
+        android:id="@+id/action_layout_ba"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/action_img_right"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/msg" />
+
+        <TextView
+            android:id="@+id/action_txt_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="消息"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</RelativeLayout>

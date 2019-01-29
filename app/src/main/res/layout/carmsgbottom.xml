@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <!--完善车辆资料图片上传布局 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/carmsg_txt_title_licUrl"
+                android:layout_width="wrap_content"
+                android:text="上传清晰的行驶证正页"
+                android:textSize="15dp"
+                android:textColor="@color/jetblack"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="*"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textColor="@color/red"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/carmsg_img_front_licUrl"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+
+                android:src="@drawable/icon_login"/>
+
+            <LinearLayout
+                android:id="@+id/carmsg_layout_licUrl"
+                android:layout_width="120dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/grayish"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_height="120dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/carmsg_layout_reverse_licUrl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="上传行驶证"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#050505"/>
+
+    <!--上传保险卡正页 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/carmsg_txt_title_insurance"
+                android:layout_width="wrap_content"
+                android:text="上传保险卡正页"
+                android:textSize="15dp"
+                android:textColor="@color/jetblack"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="*"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textColor="@color/red"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/carmsg_img_front_insurance"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+
+                android:src="@drawable/icon_login"/>
+
+            <LinearLayout
+                android:id="@+id/carmsg_layout_insuranceUrl"
+                android:layout_width="120dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/grayish"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_height="120dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/carmsg_layout_reverse_InsuranceUrl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="上传保险卡"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#050505"/>
+
+    <!--上传车辆全身照 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/carmsg_txt_title_VPicUrl"
+                android:layout_width="wrap_content"
+                android:text="上传车辆全身照"
+                android:textSize="15dp"
+                android:textColor="@color/jetblack"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="*"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textColor="@color/red"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/carmsg_img_front_VPicUrl"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+
+                android:src="@drawable/icon_login"/>
+
+            <LinearLayout
+                android:id="@+id/carmsg_layout_VPicUrl"
+                android:layout_width="120dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/grayish"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_height="120dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/carmsg_layout_reverse_VPicUrl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="上传车辆全身照"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#050505"/>
+
+    <!--上传运营证 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/carmsg_txt_title_BizLicUrl"
+                android:layout_width="wrap_content"
+                android:text="上传运营证"
+                android:textSize="15dp"
+                android:textColor="@color/jetblack"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="*"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textColor="@color/red"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/carmsg_img_front_BizLicUrl"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+
+                android:src="@drawable/icon_login"/>
+
+            <LinearLayout
+                android:id="@+id/carmsg_layout_BizLicUrl"
+                android:layout_width="120dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/grayish"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_height="120dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/carmsg_layout_reverse_BizLicUrl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="上传运营证"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#050505"/>
+
+    <!--上传车辆购置税 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/carmsg_txt_title_TaxUrl"
+                android:layout_width="wrap_content"
+                android:text="上传车辆购置税"
+                android:textSize="15dp"
+                android:textColor="@color/jetblack"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="*"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textColor="@color/red"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/carmsg_img_front_TaxUrl"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+
+                android:src="@drawable/icon_login"/>
+
+            <LinearLayout
+                android:id="@+id/carmsg_layout_TaxUrl"
+                android:layout_width="120dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/grayish"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_height="120dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/carmsg_layout_reverse_TaxUrl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="上传车辆购置税"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
